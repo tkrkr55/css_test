@@ -1,3 +1,12 @@
+div {
+  box-sizing: border-box;
+}
+input {
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
 .main-background {
   width: 100%;
   height: 500px;
@@ -6,16 +15,101 @@
   background-repeat: no-repeat;
   background-position: center;
   padding:1px;
+  position:relative;
 }
+
+
+
 .main-title {
   color:white;
   font-size: 40px;
   margin-top: 200px;
+  text-align: center;
 }
 .main-content {
   color: white;
+  text-align: center;
 }
-.main-background > button > a{
-  color: black;
-  text-decoration: none;
+
+.main-button {
+  padding: 15px;
+  font-size: 20px;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  position:absolute;
+  left:0;
+  right: 0;
+  margin:auto;
+  width: 150px;
+  z-index: 6;
 }
+
+.main-modal {
+  width:80%;
+  height: 200px;
+  max-width: 600px;
+  max-height: 300px;
+  background-color: #eee;
+  font-size: 13px;
+  margin:auto;
+  position: relative;
+  top:-40px;
+  padding:30px;
+  box-sizing: border-box;
+}
+
+.main-modal-title {
+  padding-top:40px;
+  text-align: center;
+}
+
+.main-modal-content {
+  color:gray;
+  padding:10px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+input {
+  width: 150px;
+  height: 30px;
+}
+.info {
+  margin:auto;
+  width: 600px;
+  border: 1px solid black;
+  text-align: center;
+}
+.info-first-name {
+  float: left;
+  margin-left: 10px;
+  padding-left: 100px;
+}
+.info-last-name {
+  float: left;
+}
+
+.message {
+  clear: both;
+}
+
+input[type=email] {
+  width: 400px;
+}
+
+.info-fullname {
+  width: 80%;
+  max-width: 400px;
+  min-width: 200px;
+  margin:auto;
+  position:relative;
+}
+
+.info-last-name {
+  position: absolute;
+  right: 0;
+  text-align: left;
+}
+
